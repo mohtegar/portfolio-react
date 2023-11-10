@@ -107,15 +107,15 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: hsla(830, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(830, 100%, 50%, 1) 0%, hsla(885, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(830, 100%, 50%, 1) 0%, hsla(885, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(830, 100%, 50%, 1) 0%, hsla(885, 100%, 50%, 1) 100%);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
   border: none;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_black};
   font-size: 18px;
   font-weight: 600;
 `
@@ -130,13 +130,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs.sendForm('service_juomkym', 'template_zro0xah', form.current, '3tkWyEuA-IVfEwFeA')
+    .then((result) => {
+      setOpen(true);
+      form.current.reset();
+    }, (error) => {
+      console.log(error.text);
+    });
   }
 
 

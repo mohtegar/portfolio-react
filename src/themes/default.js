@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     // Temp fonts
     fonts: {
@@ -6,15 +7,15 @@ export default {
     },
     // Colors for layout
     colors: {
-      primary1: "#854CE6",
-      background1: "#222A35",
-      button: "#854CE6",
+      primary1: "#18B828",
+      background1: "#06C719",
+      button: "#06C719",
       background2: "#19212C",
       text: "#C8CFD8",
       text1: "#F2F5F7",
       text2: "#626970",
       text3: "#575C66",
-      footerBackground: "#00012B"
+      footerBackground: "#06560E"
     },
     // Breakpoints for responsive design
     breakpoints: {
@@ -23,4 +24,4 @@ export default {
       lg: 'screen and (max-width: 1024px)',
       xl: 'screen and (max-width: 1280px)'
     },
-  }
+  };
